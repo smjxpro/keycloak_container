@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: keycloak-config
+  namespace: namespace-name
+data:
+  KC_HOSTNAME_STRICT: "false"
+  KC_PROXY: "edge"
+  KC_DB: database-type
+  KC_DB_URL: jdbc-url
+  KC_DB_USERNAME: username
+  KC_DB_PASSWORD: password
